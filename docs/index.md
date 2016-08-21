@@ -216,10 +216,10 @@ MKMapDirections(/*…*/).promise().then { directions -> Void in
 ```
 
 However you inevitably use some other framework that doesn't support promises.
-For these situations we provide `wrap`:
+For these situations we provide `PromiseKit.wrap`:
 
 ```swift
-Promise.wrap(FooKit.login).then { result in
+PromiseKit.wrap(FooKit.login).then { result in
     //
     // login probably looks like:
     //
@@ -233,7 +233,7 @@ Promise.wrap(FooKit.login).then { result in
 For callbacks that take initial parameters, open the closure:
 
 ```swift
-Promise.wrap{ FooKit.post(message: text, completionHandler: $0) }.then { result in
+PromiseKit.wrap{ FooKit.post(message: text, completionHandler: $0) }.then { result in
     //…
 }.catch { error in
     //…
