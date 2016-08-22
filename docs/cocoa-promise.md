@@ -42,7 +42,7 @@ NSNotificationCenter.default.observe(once: notificationName).then { obj in
 }
 ```
 
-> There are many more, [view our full extensions listing on GitHub](https://github.com/PromiseKit).
+Above is just a small sampling; [view our full extensions listing on GitHub](https://github.com/PromiseKit).
 
 ---
 
