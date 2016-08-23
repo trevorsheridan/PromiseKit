@@ -316,7 +316,7 @@ open class Promise<T> {
     @available(*, unavailable, renamed: "pending()")
     public class func `pendingPromise`() -> PendingTuple { fatalError() }
 
-    @available(*, unavailable, message: "deprecated: use then(on: DispatchQueue.global())")
+    @available(*, unavailable, message: "deprecated: use then(on: .global())")
     public func thenInBackground<U>(execute body: (T) throws -> U) -> Promise<U> { fatalError() }
 
     @available(*, unavailable, renamed: "catch")
