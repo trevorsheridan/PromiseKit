@@ -36,6 +36,9 @@ Pod::Spec.new do |s|
     ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'Foundation'
     ss.ios.deployment_target = '9.0'
+    ss.osx.deployment_target = '10.11'
+    ss.tvos.deployment_target = '9.0'
+    ss.watchos.deployment_target = '2.0'
   end
 
   s.subspec 'AddressBook' do |ss|
